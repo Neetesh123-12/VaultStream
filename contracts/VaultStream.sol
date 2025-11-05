@@ -1,19 +1,7 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
-
-/**
- * @title VaultStream
- * @dev A simple decentralized vault system where users can deposit and withdraw ETH securely.
- * It maintains a record of all deposits per user.
- */
-contract VaultStream {
-    // Mapping to store user balances
+Mapping to store user balances
     mapping(address => uint256) private balances;
 
-    // Event emitted on deposit
-    event Deposited(address indexed user, uint256 amount);
-
-    // Event emitted on withdrawal
+    Event emitted on withdrawal
     event Withdrawn(address indexed user, uint256 amount);
 
     /**
@@ -46,3 +34,6 @@ contract VaultStream {
         return balances[msg.sender];
     }
 }
+// 
+Updated on 2025-11-05
+// 
